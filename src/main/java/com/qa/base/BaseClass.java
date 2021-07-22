@@ -31,7 +31,7 @@ public class BaseClass extends Utility {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}else {
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver2");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("addArguments");
 			options.addArguments("--window-size=1920,1080");
