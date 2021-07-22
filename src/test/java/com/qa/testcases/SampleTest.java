@@ -27,12 +27,9 @@ public class SampleTest extends BaseClass {
 		System.out.println(pageTitle);
 	}
 
-	@Test(priority = 2, dataProvider = "test-data", dataProviderClass = CustomDataProvider.class)
+	@Test(priority = 2, dataProvider = "test-data", dataProviderClass = CustomDataProvider.class, enabled = false)
 	public void verifySearchResult(String key) {
 		sample.search(key);
 			Assert.assertTrue(true, "Test case Failed");
-			
-			
 			}
-
 }
